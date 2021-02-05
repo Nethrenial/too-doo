@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="script.js" defer></script>
+
+    <title>Todo App</title>
+  </head>
+  <body>
+    <h1>Too-Doo</h1>
+
+    <div class="container" id="app">
+      <h2>{{reminder}}</h2>
+      <div v-if="!ifClickedTask" class="container-2">
+        <form @submit.prevent>
+          <input type="text" v-model="text" />
+          <button type="submit" @click="addTask">Add Task</button>
+        </form>
+        <p v-if="tasks.length === 0">
+          It seems that you've entered no tasks yet,please enter some tasks
+          first!
+        </p>
+        <ul v-else>
+          <li v-for="(task,index) in tasks" @click="clickedTask(index)">
+            {{index +1}}. {{task}}
+          </li>
+        </ul>
+      </div>
+
+      <div class="confirm-delete" v-if="ifClickedTask">
+        <h2>Are you sure you want to delete the below task?</h2>
+        <p>{{tasks[clickedIndex]}}</p>
+        <button @click="deleteTask">Yes</button>
+        <button @click="clickedTask">Cancel</button>
+      </div>
+    </div>
+  </body>
+</html>

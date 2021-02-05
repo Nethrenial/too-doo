@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Jost", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: orchid;
+  font-size: 42px;
+  width: 70vw;
+  margin: 20px auto;
+  box-shadow: 5px 5px 5px rgba(255, 145, 255, 0.5);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 10px;
+}
+h2 {
+  text-align: center;
+  color: purple;
+}
+.container-2 {
+  z-index: 1;
+  box-shadow: 5px 5px 5px rgba(255, 145, 255, 0.5);
+  margin: 3rem;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+input {
+  height: 40px;
+  border: 3px solid orchid;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  max-width: 500px;
+  color: purple;
+  font-size: 20px;
+  font-style: italic;
+  padding: 5px;
+  background-color: rgb(255, 245, 255);
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  box-shadow: 5px 5px 5px rgba(218, 112, 214, 0.5);
+  margin: 20px;
+  width: 120px;
+  height: 30px;
+  background-color: orchid;
+  border: 2px solid orchid;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+button:focus {
+  outline: none;
+}
+button:hover {
+  box-shadow: 3.5px 3.5px 3.5px rgba(218, 112, 214, 0.75);
+}
+
+button:active {
+  box-shadow: 1px 1px 1px rgba(218, 112, 214, 0.95);
+}
+
+ul {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+li {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  background-color: rgba(218, 112, 214, 0.3);
+  border: 2px solid purple;
+  padding: 0.5rem;
+  color: purple;
+  border-radius: 25px;
+  text-align: left;
+}
+p {
+  text-align: center;
+  color: purple;
+  font-size: 20px;
+}
+
+.confirm-delete {
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgba(218, 112, 214, 0.4);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.confirm-delete h2 {
+  color: purple;
+}
